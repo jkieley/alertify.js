@@ -620,10 +620,6 @@
 	};
 
 	// AMD and window support
-	if (typeof define === "function") {
-		define([], function () { return new Alertify(); });
-	} else if (typeof global.alertify === "undefined") {
-		global.alertify = new Alertify();
-	}
+    global.alertify = new Alertify();
 
 }(this));
